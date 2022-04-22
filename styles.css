@@ -1,3 +1,17 @@
+
+  
+@keyframes slidein {
+from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+
 .movies {
     width: 100%;
     display: flex;
@@ -5,6 +19,8 @@
 }
 
 .movies li {
+    animation-duration: 3s;
+    animation-name: slidein;
     flex: 1;
     display: flex;
     flex-direction: column;
